@@ -15,7 +15,18 @@ public class MaleCharacter implements CharacterGenerator {
         return "John Doe";
     }
 
+    @Override
     public String getPersonality() {
         return "Generous " + personalityService.getPersonality();
+    }
+
+    @Override
+    public int getAge() {
+        return 25;
+    }
+
+    @Override
+    public String getSocialClass() {
+        return "Middle";
     }
 }

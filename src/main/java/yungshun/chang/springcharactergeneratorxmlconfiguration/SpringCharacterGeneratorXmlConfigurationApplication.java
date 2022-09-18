@@ -25,6 +25,10 @@ public class SpringCharacterGeneratorXmlConfigurationApplication {
         // [7] Call new method for ages
         System.out.println(newCharacter.getPersonality());
 
+        // [8] Call new methods to get the literal values
+        System.out.println(newCharacter.getAge());
+        System.out.println(newCharacter.getSocialClass());
+
         // [6] Close the context
         context.close();
     }

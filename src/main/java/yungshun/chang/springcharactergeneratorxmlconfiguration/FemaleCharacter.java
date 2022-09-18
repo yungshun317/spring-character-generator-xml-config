@@ -9,15 +9,15 @@ public class FemaleCharacter implements CharacterGenerator {
     public FemaleCharacter(PersonalityService thePersonalityService) {
         personalityService = thePersonalityService;
     }
-
-    public FemaleCharacter() {
-        System.out.println("FemaleCharacter: inside no-arg constructor");
-    }
     */
 
     // Add new fields for age and socialClass
     private int age;
     private String socialClass;
+
+    public FemaleCharacter() {
+        System.out.println("FemaleCharacter: inside no-arg constructor");
+    }
 
     public int getAge() {
         return age;
