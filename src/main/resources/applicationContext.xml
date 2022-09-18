@@ -4,8 +4,13 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- Define Your Beans Here -->
-    <bean id="newCharacter" class="yungshun.chang.springcharactergeneratorxmlconfiguration.MaleCharacter"></bean>
 
     <!-- Define the Dependency -->
+    <bean id="newPersonalityService" class="yungshun.chang.springcharactergeneratorxmlconfiguration.PositivePersonalityService"></bean>
+    <bean id="newCharacter" class="yungshun.chang.springcharactergeneratorxmlconfiguration.MaleCharacter">
+
+        <!-- Set up constructor injection -->
+        <constructor-arg ref="newPersonalityService"></constructor-arg>
+    </bean>
 
 </beans>
