@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Load the property file: character.properties -->
+    <context:property-placeholder location="classpath:character.properties"></context:property-placeholder>
 
     <!-- Define Your Beans Here -->
 
@@ -19,8 +23,8 @@
         <property name="personalityService" ref="newPersonalityService" />
 
         <!-- Inject literal values -->
-        <property name="age" value="18" />
-        <property name="socialClass" value="working" />
+        <property name="age" value="${female.age}" />
+        <property name="socialClass" value="${female.socialClass}" />
     </bean>
 
 </beans>
