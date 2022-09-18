@@ -13,4 +13,10 @@
         <constructor-arg ref="newPersonalityService"></constructor-arg>
     </bean>
 
+    <bean id="newFemaleCharacter" class="yungshun.chang.springcharactergeneratorxmlconfiguration.FemaleCharacter">
+
+        <!-- Set up setter injection -->
+        <property name="personalityService" ref="newPersonalityService" />
+    </bean>
+
 </beans>

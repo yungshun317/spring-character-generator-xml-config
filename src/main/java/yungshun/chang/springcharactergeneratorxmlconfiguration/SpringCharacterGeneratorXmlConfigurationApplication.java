@@ -17,7 +17,7 @@ public class SpringCharacterGeneratorXmlConfigurationApplication {
         // System.out.println(maleCharacter.getName());
 
         // [4] Retrieve bean from Spring IoC container
-        CharacterGenerator newCharacter = context.getBean("newCharacter", CharacterGenerator.class);
+        CharacterGenerator newCharacter = context.getBean("newFemaleCharacter", CharacterGenerator.class);
 
         // [5] Call methods on the bean
         System.out.println(newCharacter.getName());
