@@ -1,10 +1,10 @@
-package yungshun.chang.springcharactergeneratorxmlconfiguration;
+package yungshun.chang.springcharactergeneratorxmlconfig;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class SpringCharacterGeneratorXmlConfigurationApplicationTests {
+class SpringCharacterGeneratorXmlConfigApplicationTests {
 
     @Test
     void contextLoads() {

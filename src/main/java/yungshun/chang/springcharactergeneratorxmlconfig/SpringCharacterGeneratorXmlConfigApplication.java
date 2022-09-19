@@ -1,10 +1,8 @@
-package yungshun.chang.springcharactergeneratorxmlconfiguration;
+package yungshun.chang.springcharactergeneratorxmlconfig;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class SpringCharacterGeneratorXmlConfigurationApplication {
+public class SpringCharacterGeneratorXmlConfigApplication {
 
     public static void main(String[] args) {
 

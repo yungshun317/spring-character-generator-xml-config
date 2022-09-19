@@ -10,14 +10,14 @@
     <!-- Define Your Beans Here -->
 
     <!-- Define the Dependency -->
-    <bean id="newPersonalityService" class="yungshun.chang.springcharactergeneratorxmlconfiguration.PositivePersonalityService"></bean>
-    <bean id="newMaleCharacter" class="yungshun.chang.springcharactergeneratorxmlconfiguration.MaleCharacter">
+    <bean id="newPersonalityService" class="yungshun.chang.springcharactergeneratorxmlconfig.PositivePersonalityService"></bean>
+    <bean id="newMaleCharacter" class="yungshun.chang.springcharactergeneratorxmlconfig.MaleCharacter">
 
         <!-- Set up constructor injection -->
         <constructor-arg ref="newPersonalityService"></constructor-arg>
     </bean>
 
-    <bean id="newFemaleCharacter" class="yungshun.chang.springcharactergeneratorxmlconfiguration.FemaleCharacter">
+    <bean id="newFemaleCharacter" class="yungshun.chang.springcharactergeneratorxmlconfig.FemaleCharacter">
 
         <!-- Set up setter injection -->
         <property name="personalityService" ref="newPersonalityService" />

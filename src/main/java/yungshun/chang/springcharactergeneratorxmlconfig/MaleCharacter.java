@@ -1,4 +1,4 @@
-package yungshun.chang.springcharactergeneratorxmlconfiguration;
+package yungshun.chang.springcharactergeneratorxmlconfig;
 
 public class MaleCharacter implements CharacterGenerator {
 

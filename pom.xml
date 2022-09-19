@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>yungshun.chang</groupId>
-    <artifactId>spring-character-generator-xml-configuration</artifactId>
+    <artifactId>spring-character-generator-xml-config</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-character-generator-xml-configuration</name>
-    <description>spring-character-generator-xml-configuration</description>
+    <name>spring-character-generator-xml-config</name>
+    <description>spring-character-generator-xml-config</description>
     <properties>
         <java.version>18</java.version>
     </properties>
